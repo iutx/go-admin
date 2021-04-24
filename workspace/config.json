@@ -1,0 +1,44 @@
+{
+	"database": {
+		"default": {
+			"dsn": "root:Lex9.lex9123@tcp(mysql.viper.run:18443)/goadmin-dev?charset=utf8mb4&parseTime=True&loc=Local",
+			"max_idle_con": 5,
+			"max_open_con": 10,
+			"driver": "mysql"
+		},
+		"antiddos": {
+			"dsn": "root:Lex9.lex9123@tcp(mysql.viper.run:18443)/antiddos?charset=utf8mb4&parseTime=True&loc=Local",
+			"max_idle_con": 5,
+			"max_open_con": 10,
+			"driver": "mysql"
+		}
+	},
+	"app_id": "XDriverMpvjASnINq",
+	"language": "cn",
+	"prefix": "ops",
+	"theme": "sword",
+	"store": {
+		"path": "./uploads",
+		"prefix": "uploads"
+	},
+	"title": "AntiDDOS运维平台",
+	"logo": "AntiDDOS",
+	"mini_logo": "Ant",
+	"index": "/",
+	"login_url": "/login",
+	"debug": true,
+	"env": "local",
+	"info_log": "./logs/info.log",
+	"error_log": "./logs/error.log",
+	"access_log": "./logs/access.log",
+	"session_life_time": 7200,
+	"file_upload_engine": {
+		"name": "local"
+	},
+	"login_title": "AntiDDOS",
+	"login_logo": "AntiDDOS",
+	"auth_user_table": "goadmin_users",
+	"bootstrap_file_path": "./bootstrap.go",
+	"go_mod_file_path": "./go.mod",
+	"asset_root_path": "./public/"
+}
